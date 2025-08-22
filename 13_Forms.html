@@ -4,8 +4,102 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Forms</title>
+    <style>
+        input {
+            padding: 20px;
+        }
+        form{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
+    <center>
+        <h2>
+           📇 HTML Forms
+        </h2>
+    </center>
+    <hr>
+    <form action="/submint" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username" required><br><br>
+
+    <label for="password">password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password" required ><br><br>
+
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email" placeholder="Enter password" required><br><br>
+
+    <label for="website">website</label>
+    <input type="url" id="website" name="website"
+    placeholder="https://example.com"><br>
     
+    <label for="search">Search:</label>
+    <input type="search" name="search" id="search" placeholder="Search..."><br><br>
+     <!-- Data and Time inputs -->
+      <label for="birthday">Birthday</label>
+      <input type="data" name="birthday" id="birthday"><br><br>
+      <label for="appt">Appointment time:</label>
+      <input type="time" name="appt" id="appt"><br><br>
+
+      <label for="meeting">Meeting (local datatime)</label>
+      <input type="datetime-local" name="meeting" id="meeting">
+      <br><br>
+
+      <label for="week">Week:</label>
+      <input type="week" name="week" id="week"><br><br>
+
+      <label for="month">Month:</label>
+      <input type="month" name="month" id="month"><br><br>
+
+      <!-- Numbers, Range, Color -->
+       <label for="quantity">Quantity:</label>
+       <input type="number" name="number" id="number" placeholder="Enter a number" min="1" max="10"><br><br>
+
+       <label for="volume">Volume:</label>
+       <input type="range" name="volume" id="volume" min="0" max="100"><br><br>
+
+       <label for="favcolor">Favorite Color:</label>
+       <input type="color" name="favcolor" id="favcolor"><br><br>
+
+       <!-- File and Hidden -->
+        <label for="avatar">Upload Avatar:</label>
+        <input type="file" name="avatar" id="avatar"><br><br>
+
+        <input type="hidden" name="userid" value="12345">
+
+        <!-- Checkboxes and Radios -->
+         <label><input type="checkbox" name="subscribe" checked>Subscribe</label><br><br>
+        <label>Gender:</label>
+        <label><input type="radio" name="gender" value="male">Male</label>
+        <label><input type="radio" name="gender" id="female">Female</label><br><br>
+
+        <!-- Textarea -->
+         <label for="comments">Comments:</label><br>
+         <textarea name="comments" id="comments" placeholder="Enter your comments"></textarea><br><br>
+
+         <!-- Select and Datalist -->
+          <label for="country">Country:</label>
+          <select name="country" id="country">
+            <option value="">Select country></option>
+            <option value="us">USA</option>
+            <option value="ca">Canada</option>
+            <option value="uk">UK</option>
+          </select><br><br>
+
+          <label for="browser">Browser</label>
+          <input type="browsers" id="browser" name="browser" placeholder="Choosebrowser">
+          <datalist id="browsers">
+            <option value="Chrome"></option>
+            <option value="Firefox"></option>
+            <option value="Safari"></option>
+            <option value="Edge"></option>
+          </datalist><br><br>
+
+          <!--  -->
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+          <input type="button" value="Click Me" onabort="alert('Button clicked')">
+    </form>
 </body>
 </html>
