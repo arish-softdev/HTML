@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colspan and Rowspan</title>
+    <style>
+        table {
+        width: 100%;
+        border-collapse: collapse ;
+    }
+    th, td {
+        padding: 8px;
+        border: 1px solid black;
+    }
+    th {
+        background-color: rgb(255, 37, 13);
+    }
+    tr:hover {
+        background-color: aqua;
+    }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>
+            Colspan and Rowspan
+        </h2>
+    </center>
+    <hr>
+    <table>
+        <tr>
+            <th>
+                First Name
+            </th>
+            <th colspan="2">
+                Details
+            </th>
+        </tr>
+        <tr>
+            <td style="background-color: rgb(185, 252, 252);" rowspan="2">Aqua</td>
+            <td>
+            Age: 18
+          </td>
+          <td>
+            Favcolor: Black
+          </td>
+        </tr>
+        <tr>
+            <td>
+            Favgame: Chess
+          </td>
+          <td>
+            Country: Japan
+          </td>
+        </tr>
+    </table>
+</body>
+</html>

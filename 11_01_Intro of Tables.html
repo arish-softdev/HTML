@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        table{
+            width: 100%;
+            border-collapse:collapse ;
+        }
+        th, td{
+            padding: 8px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            text-align: center;
+            background-color: aqua;
+        }
+        tr:nth-child(even) {
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        td:first-child {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>
+        Table
+    </h2>
+    </center>
+    <hr>
+     <table>
+        <tr>
+            <th>
+                First name
+            </th>
+            <th>
+                Last name 
+            </th>
+            <th>
+                Age
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Aqua
+            </td>
+            <td>
+                Hoshino
+            </td>
+            <td>
+                18
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kana
+            </td>
+            <td>
+                Arima
+            </td>
+            <td>
+                19
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ruby
+            </td>
+            <td>
+                Hoshino
+            </td>
+            <td>
+                18
+            </td>
+        </tr>
+     </table>
+    
+</body>
+</html>

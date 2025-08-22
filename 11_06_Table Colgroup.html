@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Colgroup</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse ;
+        }
+        th, td {
+            padding: 8px;
+            border: 1px solid black;
+        }
+        colgroup col:first-child {
+           background-color: aqua;
+        }
+        colgroup col:nth-child(2) {
+           background-color: rgb(194, 19, 19);
+        }
+        colgroup col:nth-child(3) {
+           background-color: rgb(255, 0, 179);
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h2>
+            Table Colgroup
+        </h2>
+    </center>
+    <hr>
+    <table>
+        <colgroup>
+            <col style="background-color: aqua;">
+            <col style="background-color: rgb(194, 19, 19);">
+            <col style="background-color: rgb(255, 0, 179);">
+        </colgroup>
+        <tr>
+            <th>
+                First name
+            </th>
+            <th>
+                Last name 
+            </th>
+            <th>
+                Age
+            </th>
+        </tr>
+        <tr>
+            <td>
+                Aqua
+            </td>
+            <td>
+                Hoshino
+            </td>
+            <td>
+                18
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Kana
+            </td>
+            <td>
+                Arima
+            </td>
+            <td>
+                19
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Ruby
+            </td>
+            <td>
+                Hoshino
+            </td>
+            <td>
+                18
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
